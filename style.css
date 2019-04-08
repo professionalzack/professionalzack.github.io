@@ -26,6 +26,7 @@ body {
 }
 
 section {
+    margin-top: 10vh;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -124,17 +125,18 @@ main {
 }
 
 .slide-screen {
-      width: 50vw;
+      /* width: 50vw;
       height: 25vw;
       border: 1px dashed green;
-      overflow: hidden;
-      margin: 0 auto;
-
-      display: inline-block;
-    height: 200px;
-    width: 500px;
+      margin: 0 auto; */
+      
+    overflow: hidden;
+    display: inline-block;
+    height: 25vw;
+    width: 50vw;
     background: black;
-    position: absolute;
+    position: absolute
+    left ;
     margin: auto;
 }
 
