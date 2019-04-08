@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>POJECT ZERO - ZACKLAND</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>PROJECT ZERO - ZACKLAND</title>
 </head>
 <body>
-    <h1>hello, worlde</h1>    
+    <header>
+        <nav>
+            <u class="navbar">
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </u>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <img src="assets/myFace.png" alt="the author standing in front of a van's open hood in mock anger" srcset="">
+            <h1>Zachary Paris Suess</h1>
+            <h2>Web Software Engineer</h2>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="slider">
+                    <h3>
+                        turn off auto-slide?
+                        <radiogroup><input type="radio" name="yes" id="yes"><input type="radio" name="no" id="no"></radiogroup>
+                    </h3>
+                    <div class="nav-wrap">
+                        <div class="arrow-button left-arrow"><span class="left-button button-style" id="arrow1">❮</span></div>
+                        <div class="arrow-button right-arrow"><span class="right-button button-style" id="arrow-1">❯</span></div>
+                    </div>
+                    <div class="slide-screen" id="slideScreen">
+                        <div class="film-reel" id="filmReel">
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                            <div class="slide-frame" id="slideFrame"><button class="modal-button" id="modButton">Info</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnails">
+                    <a href="assets/quakeWatch.png" class="thumb" id="thumb0"></a>
+                    <a href="assets/shop-screenshot.png" class="thumb" id="thumb1"></a>
+                    <a href="assets" class="thumb" id="thumb2"></a>
+                    <a href="" class="thumb" id="thumb3"></a>
+                    <a href="" class="thumb" id="thumb4"></a>
+                    <a href="" class="thumb" id="thumb5"></a>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="quotes-area">
+                <div class="stars">★★★★★</div>
+                <div class="quotes"></div>
+            </div>
+            <div class="about-me">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil possimus numquam facilis laboriosam alias, animi aut recusandae necessitatibus officiis nemo dolor ducimus minus facere asperiores sapiente saepe molestiae repudiandae quaerat omnis quos voluptates! Fugiat iste veritatis officia id laboriosam, illum rerum aut, nulla, molestiae temporibus similique vitae in corporis ipsa excepturi nobis. Quae doloremque eos optio error odit cumque ratione iure? Minima, voluptatibus, rem nostrum soluta amet eos porro provident dignissimos quo sapiente ut! Quibusdam repellat perspiciatis vel, quas nihil iure dolore maxime placeat assumenda, sint provident aperiam architecto deserunt aliquid harum non cum inventore in mollitia ab. Laudantium.</p>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="flex-margin"></div>
+            <div class="contact-box">
+                <h3>Get in Touch</h3>
+                <form action="" class="contact-form">
+                    <div class="form-input top-line">
+                        <p>Please input at least your first name thanks.</p>
+                        <label for="name">Name</label><input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-input top-line">
+                        <p>This won't work without your email address</p>
+                        <label for="email">Email</label><input type="text" name="email" id="email">
+                    </div>
+                    <div class="form-input top-line">
+                        <p>are you sure you don't want to give me fave stars?</p>
+                        <label for="starbox">Give me five stars?</label><input type="text" name="starbox" id="starbox">
+                    </div>
+                    <div class="form-input message">
+                        <p>At the very least just say hello.</p>
+                        <label for="comment">Message</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="socials">
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github-square"></i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="text">
+            <p>© 2019 Zachary Paris Suess</p>
+        </div>
+    </footer>
 </body>
 </html>
