@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Nunito|Barlow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
-    <title>PROJECT ZERO - ZACKLAND</title>
+    <script defer src="main.js"></script>
+    <title>my portfolio</title>
 </head>
 <body>
     <header>
@@ -16,111 +16,64 @@
             <ul class="navbar">
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item">|</li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item">|</li>
-                <li class="nav-item"><a href="#social" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero" id="hero">
-           
-            <div class="hero-content">
-                <img src="assets/myFace.png" alt="the author standing in front of a van's open hood in mock anger" srcset="">
-                <h1>Zachary Paris Suess</h1>
-                <h2>Web Software Engineer</h2>
-                <!-- <h2><a href="http://www.linkedin.com/in/zacharyps/"></a>www.linkedin.com/in/zacharyps/</h2> -->
-            </div>
-
+          <div class="hero-content">
+              <img src="assets/myFace.png" id="hero-image" alt="the author standing in front of a van's open hood in mock anger" srcset="">
+              <h1>Zachary Paris Suess</h1>
+              <h2>Web Software Engineer</h2>
+          </div>
+          <br>
+          <div class="contacts">
+            <h2>connect:</h2>
+            <span class="u_l"><a target='_blank' href="assets/zacharyps.pdf"><h2>resume</h2></a></span>
+            <span class="u_l"><a target='_blank' href="http://www.linkedin.com/in/zacharyps/"><h2>linkedin</h2></a></span>
+            <span class="u_l"><a target='_blank' href="http://github.com/professionalzack/"><h2>github</h2></a></span>
+          </div>
         </section>
-        <section class="projects" id="projects">
-            <!-- <div class="container"> -->
-                <div class="slider">
-                    <!-- <button class="auto-slide">turn off autoslide ?</button> -->
-                    <!-- <h3>
-                        turn off auto-slide?
-                        <radiogroup><input type="radio" name="yes" id="yes"><input type="radio" name="no" id="no"></radiogroup>
-                    </h3> -->
-                    <!-- <div class="nav-wrap">
-                    </div> -->
-                    <div class="arrow-button left-arrow"><span class="left-button button-style" id="arrow1">❮</span></div>
-                    <div class="slide-screen" id="slideScreen">
-                                                        <button class="modal-button" id="modButton">Info</button>
-
-                        <div class="film-reel" id="filmReel">
-                            <div class="slide-frame slide-frame-0" id="slideFrame0">
-                                <!-- <button class="modal-button" id="modButton0">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-1" id="slideFrame1">
-                                <!-- <button class="modal-button" id="modButton1">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-2" id="slideFrame2">
-                                <!-- <button class="modal-button" id="modButton2">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-3" id="slideFrame3">
-                                <!-- <button class="modal-button" id="modButton3">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-4" id="slideFrame4">
-                                <!-- <button class="modal-button" id="modButton4">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-5" id="slideFrame5">
-                                <!-- <button class="modal-button" id="modButton5">Info</button> -->
-                            </div>
-                            <div class="slide-frame slide-frame-6" id="slideFrame6">
-                                <!-- <button class="modal-button" id="modButton6">Info</button> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow-button right-arrow"><span class="right-button button-style" id="arrow-1">❯</span></div>
+        <div id="projects"></div>
+        <section class="projects" >
+            <div class="head-space"></div>
+            <!-- <div class="head-space"></div> -->
+           <div class="project1">
+             <a href="http://flashr-123.herokuapp.com">
+               <h2>FLASH*R</h2>
+             </a>
+             <div class="profile-content">
+               <img src="assets/flashr-screenshot.png" alt="website screenshot" class="main-pic">
+               <div class="p-side">
+                 <p>Flash*r is a social flashcard app that relies on community-sourced answers and discussions. It was all of our first time building anything substantial in Python, and I know that I had a blast learning the quirks of Django together. On this app, we ended up spending a full day and half only planning — no computers open, and it really paid off when we finally sat down to implement it.</p>
                 </div>
-                <div class="thumbnails">
-                    <a href="" class="thumb" id="thumb0"><img src="assets/quakeWatch.png" alt="screenshot of a earthquake report website"></a>
-                    <a href="" class="thumb" id="thumb1"><img src="assets/shop-screenshot.png" alt="screenshot of a zelda shop with pixelated food items"></a>
-                    <a href="" class="thumb" id="thumb2"><img src="assets/annie.jpg" alt="a stand-in until i grab a screenshot of my racing game"></a>
-                    <a href="" class="thumb" id="thumb3"><img src="assets/airport.jpg" alt="abandoned berlin airport turned community garden"></a>
-                    <a href="" class="thumb" id="thumb4"><img src="assets/magnus.jpg" alt="man and menhir in the norwegian woods"></a>
-                    <a href="" class="thumb" id="thumb5"><img src="assets/fireman-poland.jpg" alt="polish fireman removing glass from a broken window, viewed from inside"></a>
+                <div class="minis"><img src="assets/flashr-erd.png" alt="whiteboard ERD"><img src="assets/flashr-wireframes.png" alt="whiteboard wireframes"></div>
+             </div>
+           </div>
+           <div class="head-space"></div>
+           <div class="project2">
+             <a href="http://chunes_app.herokuapp.com">
+               <h2>"chunes"</h2>
+             </a>
+             <div class="profile-content">
+               <div class="minis"><img src="assets/chunes-wireframe.JPG" alt=""><img src="assets/chunes-erd.JPG" alt=""></div>
+               <div class="p-side">
+                 <p>"chunes" is a music notation sharing site for folk, traditional, and original written music, using <a href="http://abcnotation.com/">abc notation</a>, and React component called <a href="https://github.com/fuhton/react-abc">react-abc.</a> Transcribed music can be shared to the public collection, where it can be read, discussed, and even listened to! User can also fork other authors' work, and edit it inside of your personal library. I built my front-end in React, and then decided to use Django to serve up the database from the back-end. All of the information I could find online about this specific set-up also included bringing in more libararies, which I didnt want to do before I understood the framework more thoroughly.</p>
                 </div>
-            <!-- </div> -->
+                <img src="assets/chunes screenshot.png" alt="" class="main-pic">
+              </div>
+           </div>
+        </section>
+        <section class="skills" id="skills">
+          <div class="head-space"></div>
+          <img class="skillset" src="assets/skills.png" alt="skills words cloud">
         </section>
         <section class="about" id="about">
-            <div class="quotes-area">
-                <div class="stars">★★★★★</div>
-                <div class="quotes">This is where the compliments go.</div>
-            </div>
             <div class="about-me">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nihil possimus numquam facilis laboriosam alias, animi aut recusandae necessitatibus officiis nemo dolor ducimus minus facere asperiores sapiente saepe molestiae repudiandae quaerat omnis quos voluptates! Fugiat iste veritatis officia id laboriosam, illum rerum aut, nulla, molestiae temporibus similique vitae in corporis ipsa excepturi nobis. Quae doloremque eos optio error odit cumque ratione iure? Minima, voluptatibus, rem nostrum soluta amet eos porro provident dignissimos quo sapiente ut! Quibusdam repellat perspiciatis vel, quas nihil iure dolore maxime placeat assumenda, sint provident aperiam architecto deserunt aliquid harum non cum inventore in mollitia ab. Laudantium.</p>
-            </div>
-        </section>
-        <!-- <section class="contact" id="contact">
-            <div class="flex-margin"></div>
-            <div class="contact-box">
-                <h3>Get in Touch</h3>
-                <form action="" class="contact-form">
-                    <div class="form-input top-line">
-                        <p class="warning">Please input at least your first name thanks.</p>
-                        <label for="name">Name: </label><input type="text" name="name" id="name">
-                    </div>
-                    <div class="form-input top-line">
-                        <p class="warning">This won't work without your email address</p>
-                        <label for="email">Email: </label><input type="text" name="email" id="email">
-                    </div>
- 
-                    <div class="form-input message">
-                        <p class="warning">At the very least just say hello.</p>
-                        <label for="comment">Message</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                    <button type="submit" id="submitt">Submit</button>
-                </form>
-            </div> -->
-            <div class="social" id="social">
-                <div class="head-space"></div>
-                <h2>contact me:</h2>
-                <div class="socials">
-                    <i class="fab fa-discord"></i>
-                   <a href="http://www.linkedin.com/in/zacharyps/"><i class="fab fa-linkedin"></i></a>
-                   <a href="http://github.com/professionalzack/"> <i class="fab fa-github-square"></i></a>
-                </div>
+                <p>I am a San Francisco-born-and-based software engineer with a serious love for collaborative learning and a strong bias towards clean, reusable code. I have always been very enthusiastic about elegant and efficient solutions in life, so being able to write my own and see them in action has been a real joy. When I am not programming, I am either playing outside, playing Dungeons and Dragons, or playing accordion.</p>
             </div>
         </section>
     </main>
@@ -135,13 +88,3 @@
 
 
 
-
-
-
-<!-- image sources for the slides
-<img src="assets/quakeWatch.png" alt="screenshot of a earthquake report website">
-<img src="assets/shop-screenshot.png" alt="screenshot of a zelda shop with pixelated food items">
-<img src="assets/underwater-tractor.jpg" alt="a stand-in until i grab a screenshot of my racing game">
-<img src="assets/airport.jpg" alt="abandoned berlin airport turned community garden">
-<img src="assets/magnus.jpg" alt="man and menhir in the norwegian woods">
-<img src="assets/fireman-poland.jpg" alt="polish fireman removing glass from a broken window, viewed from inside"> -->
