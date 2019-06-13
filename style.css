@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --pic0: url('assets/quakeWatch.png');
     --pic1: url('assets/shop-screenshot.png');
     --pic2: url('assets/underwater-tractor.jpg');
@@ -6,7 +6,7 @@
     --pic4: url('assets/magnus');
     --pic5: url('assets/fireman-poland.jpg')
 
-  }
+  } */
 
 
 * {
@@ -23,6 +23,10 @@ body {
     /* font-family: 'Barlow', sans-serif; */
     font-size: 16px;
     width: 100vw;
+}
+
+h1{
+    font-size: 3em;
 }
 
 section {
@@ -56,6 +60,7 @@ nav {
     color: black;
     background-color: white;
     box-shadow: 8px 0 8px #555;
+    z-index: 4;
 }
 .flat-footed{
     box-shadow: 0 0 0;
@@ -110,6 +115,7 @@ main {
 }
 
 .hero {
+    border: 1px solid red;
     margin: 0 auto;
     height: 90vh;
     /* width: 100vw; */
@@ -118,10 +124,27 @@ main {
     justify-content: center;
     align-content: center;
 }
+
+.hero > * {
+    margin: 0 auto;
+}
+
+.hero-content {
+    text-align: left;
+}
+
 .hero img {
-      height: 300px;
-      width: 300px;
+      height: 23vw;
+      width: 23vw;
       border-radius: 50%;
+      
+}
+
+.modal-button {
+    position: absolute;
+    z-index: 8;
+    top: 20vw;
+    left: 40vw;
 }
 
 .slide-screen {
@@ -134,38 +157,120 @@ main {
     display: inline-block;
     height: 25vw;
     width: 50vw;
-    background: black;
-    position: absolute
-    left ;
-    margin: auto;
+    background: white;
+    position: absolute;
+    left: 25vw;
+
+}
+
+/* .nav-wrap {
+    width: 50vw;
+} */
+
+.arrow-button {
+    position: absolute;
+    top: 147vh;
+    /* top: 10vh;
+    left: 10vh; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    font-size: 15vh;
+    /* color: rgb(195, 219, 240); */
+    /* height: 25vh; */
+    /* min-width: 5vw; */
+    padding: 0 1vw;
+    border: none;
+    background: transparent;
+    /* background: rgba(23, 140, 200, .5); */
+    text-shadow: 3px  3px 3px rgba(250, 250, 250, .2),
+                -3px  3px 3px rgba(250, 250, 250, .2),
+                -3px -3px 3px rgba(250, 250, 250, .2),
+                 3px -3px 3px rgba(250, 250, 250, .2); 
+}
+.left-arrow {
+    left: 12vw;
+}
+.right-arrow {
+    right: 12vw;
+}
+
+span.button-style {
+    color: rgba(0,0,0, .8);  
+    /* color: red; */
+}
+
+.arrow button:hover {
+    font-size: 19vh;
 }
 
 
 
 .film-reel {
+    z-index: 2;
       display: flex;
+      height: 25vw;
       width: 350vw;
+    position: relative;
+    left: 0;
 
 }
+/* SKETCH WATCH OUT */
+
+.slide-frame-0{
+    background: url('assets/quakeWatch.png');
+}
+.slide-frame-1{
+    background: url('assets/shop-screenshot.png')
+}
+.slide-frame-2{
+    background: url('assets/annie.jpg')
+}
+.slide-frame-3{
+    background: url('assets/airport.jpg')
+}
+.slide-frame-4{
+    background: url('assets/magnus.jpg')
+}
+.slide-frame-5{
+    background: url('assets/fireman-poland.jpg')
+}
+.slide-frame-6{
+    background: url('assets/quakeWatch.png');
+}
+
+/* 
+.slide-frame-0{background: url('assets/quakeWatch.png')};
+.slide-frame-1{background: url('assets/shop-screenshot.png')};
+.slide-frame-2{background: url('assets/underwater-tractor.jpg')};
+.slide-frame-3{background: url('assets/airport.jpg')};
+.slide-frame-4{background: url('assets/magnus.jpg')};
+.slide-frame-5{background: url('assets/fireman-poland.jpg')};
+.slide-frame-6{background: url('assets/quakeWatch.png')
+}  */
 
 .slide-frame {
+    height: 25vw;
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+
+
+
+/* .slide-frame {
     width: 50vw;
     height: 25vw;
-    background-size: 50vw auto;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 img {
     height: 25vh;
     width: 50vw;
-}
+} */
 
-.slide-frame-0{background: url('assets/quakeWatch.png')};
-.slide-frame-1{background: url('assets/shop-screenshot.png')};
-.slide-frame-2{background: url('assets/underwater-tractor.jpg')};
-.slide-frame-3{background: url('assets/airport')};
-.slide-frame-4{background: url('assets/magnus')};
-.slide-frame-5{background: url('assets/fireman-poland.jpg')};
 
 .thumbnails {
     margin: 0 auto;
@@ -175,23 +280,33 @@ img {
     max-width: 80vw;
     align-content: space-around;
     overflow: hidden;
+    position: relative;
+    top: 20vh;
 }
 
 .thumbnails a {
     width: 10vw;
     height: 5vw;
-    background-size: cover;
+    object-fit: contain;
+    /* background-size: cover; */
     margin-bottom: 2vh;
     border: .3vw solid lightsalmon;
     margin: .5vw;
+    overflow: hidden;
 }
 
+.thumbnails img {
+    width: 10vw;
+    height: 5vw;
+}
+
+/* 
 #thumb0{background: url('assets/quakeWatch.png')};
 #thumb1{background: url('assets/shop-screenshot.png')};
 #thumb2{background: url('assets/underwater-tractor.jpg')};
 #thumb3{background: url('assets/airport')};
 #thumb4{background: url('assets/magnus')};
-#thumb5{background: url('assets/fireman-poland.jpg')};
+#thumb5{background: url('assets/fireman-poland.jpg')}; */
 
 
 .thumbnails img:hover {
@@ -208,17 +323,23 @@ img {
     text-align: center;
 }
 
-input, textarea {
+
+.about-me {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+
+input, textarea,  [type="submit"]{
     color: black;
     text-transform: none;
     background: white;
-    /* font-family: 'Raleway', sans-serif; */
     border: .1rem solid black;
     padding: .1rem .5rem;
     font-size: 1em;
 }
 
-[type="submit"] {
+/* [type="submit"] {
     color: #405460;
 }
 
@@ -226,7 +347,7 @@ input[type="submit"]:hover {
     color: #C3F5F8;
     background: #405460;
     transition: all 1s ease-in-out;
-}
+} */
 
 
 .contact {
@@ -255,31 +376,59 @@ form.contact-form {
     margin: 0 auto;
     /* height: 4rem; */
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .form-input {
+    text-align: left;
     width: 100%;
+    margin: 2vh 0 0;
     /* margin-bottom: 7vh; */
 }
 
 .top-line {
-    width: 27vw;
-    margin: auto;
+    width: 49%;
+    margin-left: 0;
 }
+
+/* [name="name"], [name="email"] {
+
+} */
 
 /* .bottom-two {
     width: 85vw;
 } */
 
-.in-touch:focus {
+/* .in-touch:focus {
     outline: none;
-    box-shadow: 0 0 .5rem .2rem #769AAF;
+    box-shadow: 0 0 .5rem .3rem #769AAF;
+} */
+
+[name="message"], [name="name"], [name="email"] {
+    text-align: left;
+    /* padding-bottom: 20rem; */
+    width: 100%;
 }
 
-[name="comment"] {
-    padding-bottom: 20rem;
-    width: 100%;
+.check{
+    font-weight: bold;
+    padding: 4vh 0 0;
+}
+
+.message label{
+    text-align: left;
+}
+
+#submitt {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    align-self: flex-end;
+    align-content: flex-end;
+    text-align: right;
+    float: right;
+    /* background: red; */
 }
 
 .top-line {
@@ -295,10 +444,10 @@ form.contact-form {
     width: 100%
 } */
 
-.comment [type="submit"] {
+/* .comment [type="submit"] {
     border-width: .3rem;
     width: 100%;
-}
+} */
 
 .warning {
     font-family: 'EB Garamond', serif;
@@ -308,8 +457,18 @@ form.contact-form {
     display: none;
 }
 
+/* .social{
+    width: 100vh;
+} */
+
+.socials{
+    /* width: 40vw; */
+    font-size: 3em;
+    /* padding: 5vh, 4vw, 0; */
+    /* margin: 4vh, auto, 0; */
 
 
+}
 
 
   footer {
@@ -330,6 +489,10 @@ form.contact-form {
       bottom: 0;
       right: 1vw;
   }
+
+.head-space {
+    height: 20vh;
+}
 
 
 
