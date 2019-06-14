@@ -133,6 +133,10 @@ main {
       border-radius: 50%;     
 }
 
+.profile-content * {
+  padding: 1vw;
+}
+
 .contacts {
   height: 40vh;
   width: 80vw;
